@@ -1,0 +1,54 @@
+{
+    "art" : [
+        {
+            "name": "BOOLEAN EGYPTIAN",
+            "price": "$21.00",
+            "img": "/image/Rectangle 299 (3).png"
+        },
+        {
+            "name": "ROAD TO EGYPT",
+            "price": "$11.00",
+            "img": "/image/Rectangle 622.png"
+        },
+        {
+            "name": "BLANC",
+            "price": "$11.00",
+            "img": "/image/Rectangle 49.png"
+        },
+        {
+            "name": "ELLIPSIA   ",
+            "price": "$11.00",
+            "img": "/image/Rectangle 62.png"
+        },
+        {
+            "name": "THE LAWMAKERS",
+            "price": "$30.00",
+            "img": "/image/Rectangle 621.png"
+        },
+        {
+            "name": "BOOLEAN EGYPTIAN",
+            "price": "$21.00",
+            "img": "/image/Rectangle 299 (3).png"
+        },
+        {
+            "name": "ROAD TO EGYPT",
+            "price": "$11.00",
+            "img": "/image/Rectangle 622.png"
+        },
+        {
+            "name": "BLANC",
+            "price": "$11.00",
+            "img": "/image/Rectangle 49.png"
+        },
+        {
+            "name": "ELLIPSIA   ",
+            "price": "$11.00",
+            "img": "/image/Rectangle 62.png"
+        },
+        {
+            "name": "THE LAWMAKERS",
+            "price": "$30.00",
+            "img": "/image/Rectangle 621.png"
+        }
+    ]
+}
