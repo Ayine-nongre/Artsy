@@ -4,12 +4,13 @@ import axios from 'axios'
 import NavBar from '../components/NavBar'
 import { IoIosHeartEmpty } from "react-icons/io"
 import { FaHeart } from "react-icons/fa"
+import useCartStore from '../Store/cartStore'
 
 export default function ProductPage() {
     const { id } = useParams()
     const [art, setArt] = useState([])
-    const [count, setCount] = useState(0)
     const [liked, setLiked] = useState(false)
+    const { addToCart, updateCart } = useCartStore()
 
     useEffect(() => {
         let ignore = false
@@ -48,14 +49,9 @@ export default function ProductPage() {
                     <p className='text-[#000] ml-10 md:ml-3'>Creator <a className=''>Ali Dawa</a></p>
                     <p className='text-[#000]/65 mt-3 ml-10 md:ml-3'>Made in Italy</p>
                     <p className='text-[#000]/65 mt-3 ml-10 md:ml-3'>Total views: 1.7k</p>
-                    <div className='flex ml-10 mt-5 gap-5 md:ml-3'>
-                        <p className='text-5xl font-bold' onClick={() => count > 0 ? setCount(count - 1) : setCount(0)}>-</p>
-                        <p className='text-5xl'>{count}</p>
-                        <p className='text-5xl font-bold' onClick={() => setCount(count + 1)}>+</p>
-                    </div>
 
                     <div className='ml-10 mt-5 flex gap-2 md:ml-3'>
-                        <button className='rounded-md border-2 py-3 px-8 bg-[#000] text-[#fff] md:px-16 md:py-4'>Add to cart</button>
+                        <button className='rounded-md border-2 py-3 px-8 bg-[#000] text-[#fff] md:px-16 md:py-4' onClick={() => addToCart(art)}>Add to cart</button>
                         <div className='flex self-center border-2 px-2 py-1 rounded-md md:px-3 md:py-[0.6em]' onClick={() => setLiked(!liked)}>
                             {liked ? (<FaHeart size={30} color='red' />) : (<IoIosHeartEmpty size={30} />)}
                         </div>

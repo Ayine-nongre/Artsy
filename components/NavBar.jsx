@@ -17,7 +17,7 @@ export default function NavBar() {
   return (
     <header className='flex justify-around mt-10'>
       <IoMenuOutline size={30} className='block mt-1 md:hidden' onClick={() => openNav()}/>
-      <p className='text-xl self-center'>ARTSY.</p>
+      <a href='/'><p className='text-xl self-center'>ARTSY.</p></a>
       <div className='hidden md:flex md:gap-5'>
         <a href='/'>Home</a>
         <a href='/products'>MarketPlace</a>
@@ -26,7 +26,7 @@ export default function NavBar() {
       </div>
       <div className='flex gap-5 mt-1'>
         <CiSearch size={30} />
-        <IoCartOutline size={30} />
+        <a href='/checkout'><IoCartOutline size={30} /></a>
         <FaRegBell size={30} className='hidden md:block'/>
       </div>
       <div id='mobile-menu' className='hidden'>
